@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
 
 const login = async (email, password) => {
   try {
-    const res = await axios.post('https://hospital-management-backend3.onrender.com/api/auth/login', { email, password });
+    const res = await axios.post('https://hospital-management-backend3.onrender.com/login', { email, password });
     console.log('Login success:', res.data); // Should log the token
     // Store token (e.g., localStorage)
     localStorage.setItem('token', res.data.token);
@@ -22,7 +22,7 @@ const login = async (email, password) => {
 };
 
   const register = async (email, password, role) => {
-    const res = await axios.post('https://hospital-management-backend3.onrender.com/api/auth/register', { email, password, role });
+    const res = await axios.post('https://hospital-management-backend3.onrender.com/register', { email, password, role });
     localStorage.setItem('token', res.data.token);
     console.log("suresh");
     setUser({ token: res.data.token });
