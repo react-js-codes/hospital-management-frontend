@@ -1,0 +1,13 @@
+.dashboard-home-page{
+    background-image: url("https://img.tukuppt.com/bg_grid/01/33/43/bk2Y4Qp5hD.jpg!/fh/350");
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     
+    align-items: center;
+}
+ 
